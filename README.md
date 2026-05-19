@@ -25,25 +25,13 @@ Project dikembangkan menggunakan pola MVC:
 
 Model: Berisi representasi data dan repository.
 
-Digunakan:
-model/TodoTask.java
-model/TodoRepository.java
-dto/InsertTodoDTO.java
-repository/MysqlTodoRepository.java
-
-File yang ditambahkan untuk Controller
-controller/TodoController.java
-
-Fungsi:
+Ditambhakan juga Fungsi Controller untuk:
 - Menangani event button
 - Menangani update tabel
 - Menangani interaksi user
 
 4. Menambahkan Service Layer
-
-File yang ditambahkan:
-service/TodoService.java
-
+5. 
 Fungsi:
 - Menyimpan business logic aplikasi
 - Menjadi penghubung antara Controller dan Repository
@@ -55,7 +43,7 @@ Tujuan:
 5. Mengubah Entry Point Aplikasi
 
 File yang diubah:
-Latres.java
+- Latres.java
 
 Perubahan:
 - Menggunakan MysqlTodoRepository
@@ -63,3 +51,9 @@ Perubahan:
 
 Membuat Database:
 todo_app.sql
+
+Dependency
+
+Project menggunakan:
+- Java Swing
+- MySQL JDBC Connector
